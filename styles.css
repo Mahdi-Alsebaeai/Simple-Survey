@@ -1,0 +1,76 @@
+body {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color:midnightblue;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 21px;
+}
+
+h1, .center {
+    text-align: center;
+    font-size: larger;
+}
+
+form {
+    height: 117%;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+}
+
+.user {
+    width: 100%;
+    height: 25px;
+}
+
+.gap {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+input[type="radio"] {
+    display: unset;
+}
+
+input[type="checkbox"] {
+    display: unset;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.button {
+    width: 30%;
+    height: 40px;
+    background-color: midnightblue;
+    color: white;
+    border-color: white;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: white;
+    color: midnightblue;
+    border-color: white;
+    border: 1px solid;
+    transition: ease-in-out 0.3s;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+}
+

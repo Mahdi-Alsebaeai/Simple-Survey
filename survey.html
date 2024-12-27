@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- MAIN HEADER AND META TAGS -->
+
+        <title>Survey Form</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="this is a survey form">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- CSS file link -->
+
+        <link rel="stylesheet" href="styles.css" />
+
+    </head>
+    <body>
+
+        <!-- HEADER -->
+
+        <h1 id="title">Survey Form</h1>
+        <p id="description" class="center">This is a survey form</p>
+
+        <!-- FORM START HERE -->
+
+        <form id="survey-form">
+
+            <!-- FIRST SECTION USER INFO -->
+
+            <section>
+                <fieldset>
+                    <label for="name-label" id="name-label">Name <input class="user" type="text" id="name" placeholder="Please Enter Your Name: " required /></label>
+                    <label for="email-label" id="email-label">Email <input class="user" type="email" id="email" placeholder="Please Enter Your Email: " required /></label>
+                    <label for="number-label" id="number-label">Age (Years)<input class="user" type="number" id="number" min="12" max="120" placeholder="Please Enter Your Age: " required /></label>
+                </fieldset>
+            </section>
+
+            <!-- SELECT GANDER -->
+            
+            <section>
+                <fieldset>
+                    <p>Please choose your gander<p> 
+                    <select id="dropdown">
+                        <option>Choose Gander</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </fieldset>
+            </section>
+
+            <!-- Type of employment -->
+
+            <section>
+                <fieldset>
+                    <p>Your work condition (required)</p>
+                    <label><input class="gap" type="radio" name="condition" value="full" checked />Full-Time</label>
+                    <label><input class="gap" type="radio" name="condition" value="part" />Part-Time</label>
+                    <label><input class="gap" type="radio"Name="condition" value="self" />Self-Employed</label>
+                    <label><input class="gap" type="radio"Name="condition" value="unemployed" />Unemployed</label>
+                </fieldset>
+            </section>
+
+            <!-- Skills -->
+
+            <section>
+                <fieldset>
+                    <p>select your skills (required)</p>
+                    <label><input class="gap" type="checkbox" name="skills" value="web" checked /> Web Development</label>
+                    <label><input class="gap" type="checkbox" name="skills" value="graphic" /> Graphic Design</label>
+                    <label><input class="gap" type="checkbox" name="skills" value="copywriting" /> Copywriting</label>
+                    <label><input class="gap" type="checkbox" name="skills" value="marketing" /> Digital Marketng</label>
+                </fieldset>
+            </section>
+            
+            <!-- COMMENTS TEXTAREA -->
+
+            <section>
+                <fieldset class="text">
+                    <legend>Any additional comments</legend>
+                    <textarea rows="4" cols="50" placeholder="Additional Comments Here ...."></textarea>
+                </fieldset>
+            </section>
+
+            <!-- INPUT BUTTON -->
+
+            <input id="submit" type="submit" value="Submit" class="button"/>
+
+        </form>
+    </body>
+</html>
